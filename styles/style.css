@@ -1,2 +1,40 @@
 /* Importing Required Font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lobster&family=Poppins:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap');
+
+/* root variables for later use case */
+:root {
+    --body-bg: #FFFFFF;
+    --bg-color: #FFF4E7;
+    --border-color: #FFD5A4;
+    --primary-color: #FF900E;
+    --primary-text-color: #131313;
+    --secondary-text-color: #B0B0B0;
+}
+
+/* reseting all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* class for disabling an html element for working */
+.dn {
+    display: none;
+}
+
+/* utility styles */
+body {
+    min-height: 100vh;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* common styles among the elements needed to share */
+.quick-list-heading, .valuable-features-heading, .feature-heading, .some-facts-heading h2, .our-sponsors-heading h2 {
+    color: var(--primary-text-color);
+    font-size: 45px;
+}
+
+.quick-list-info, .valuable-features-info, .feature-info, .some-facts-info, .our-sponsors-info, .footer-info {
+    color: var(--secondary-text-color);
+}
