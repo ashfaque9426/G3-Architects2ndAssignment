@@ -29,7 +29,26 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
+
 /* common styles among the elements needed to share */
+body img {
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+body ul li {
+    list-style-type: none;
+}
+
+body ul li a {
+    text-decoration: none;
+}
+
+.header-container, .footer-container {
+    background-color: var(--bg-color);
+}
+
 .quick-list-heading, .valuable-features-heading, .feature-heading, .some-facts-heading h2, .our-sponsors-heading h2 {
     color: var(--primary-text-color);
     font-size: 45px;
@@ -37,4 +56,147 @@ body {
 
 .quick-list-info, .valuable-features-info, .feature-info, .some-facts-info, .our-sponsors-info, .footer-info {
     color: var(--secondary-text-color);
+}
+
+
+/* styles for header section */
+/* nav section styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 240px 50px;
+}
+
+.navigation-list-container {
+    width: 477px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-list-container .list-item a {
+    color: #424242;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* banner section styles */
+.header-container .banner-section-container{
+    width: 75%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 45px;
+}
+
+.banner-section-article {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.banner-section-heading {
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.banner-section-heading span {
+    display: block;
+}
+
+.banner-section-info {
+    line-height: 26px;
+    margin-bottom: 53px;
+}
+
+.banner-section-article .basic-btn {
+    padding: 15px 20px;
+    background-color: var(--primary-color);
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+
+.banner-section-article .basic-btn a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.banner-section-img {
+    margin-top: 50px;
+}
+
+
+
+/* responsive design for mobile devices */
+@media only screen and (max-width: 576px) {
+    /* navigation bar styles */
+    .navbar {
+        padding-left: 10px;
+        padding-right: 10px;
+        display: block;
+        text-align: center;
+    }
+    .navbar-heading {
+        margin-bottom: 33px;
+    }
+    .navigation-list-container {
+        width: 100%;
+        display: block;
+    }
+    .navigation-list-container .list-item {
+        margin-bottom: 10px;
+    }
+
+    /* banner section styles */
+    .header-container .banner-section-container {
+        padding-top: 0;
+    }
+    .banner-section-article {
+        width: 100%;
+    }
+    .banner-section-heading {
+        font-size: XX-large;
+    }
+    .banner-section-info {
+        margin-bottom: 27px;
+    }
+}
+
+/* responsive design for tablet devices */
+@media only screen and (min-width: 577px) and (max-width: 932px) {
+    /* styles for navigation bar */
+    .navbar {
+        padding-left: 33px;
+        padding-right: 33px;
+    }
+
+    /* banner section styles */
+    .banner-section-article {
+        width: 100%;
+    }
+    .banner-section-heading {
+        font-size: XX-large;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 744px) {
+
+    /* styles for navigation bar */
+    .navbar {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+}
+
+@media only screen and (min-width: 933px) and (max-width: 1555px) {
+    /* styles for navigation bar */
+    .navbar {
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+
+    /* banner section styles */
+    .banner-section-article {
+        width: 100%;
+    }
 }
