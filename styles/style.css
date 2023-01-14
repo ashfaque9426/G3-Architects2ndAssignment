@@ -301,6 +301,35 @@ body ul li a {
     margin-bottom: 5px;
 }
 
+/* styles for our sponsors section container */
+.our-sponsors-section-container {
+    text-align: center;
+}
+
+.our-sponsors-heading h2{
+    margin-bottom: 24px;
+}
+
+.our-sponsors-info {
+    width: 40%;
+    line-height: 26px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.our-sponsors-logo-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    align-self: center;
+    grid-column-gap: 50px;
+    grid-row-gap: 30px;
+    margin-bottom: 100px;
+}
+
+.our-sponsors-logo-container img {
+    filter: grayscale(100%);
+}
+
 /* responsive design for mobile devices */
 /* extra small devices */
 @media only screen and (max-width: 373px) {
@@ -308,6 +337,8 @@ body ul li a {
     .header-container .banner-section-container {
         width: 85%;
     }
+
+    
     /* quick list features styles */
     .quick-list-heading span:last-child {
         display: inline-block;
@@ -356,6 +387,7 @@ body ul li a {
         margin-bottom: 10px;
     }
 
+
     /* banner section styles */
     .header-container .banner-section-container {
         padding-top: 0;
@@ -371,6 +403,7 @@ body ul li a {
         margin-bottom: 27px;
     }
 
+
     /* quick list features styles */
     .quick-list-img {
         grid-template-columns: 1fr;
@@ -381,6 +414,7 @@ body ul li a {
     .quick-list-info {
         width: 100%;
     }
+
 
     /* features you may enjoy section styles */
     .valuable-features-container {
@@ -395,6 +429,7 @@ body ul li a {
         bottom: 30px;
     }
 
+
     /* some facts section styles */
     .some-facts-heading {
         width: 100%;
@@ -402,6 +437,24 @@ body ul li a {
     }
     .some-facts-about {
         flex-direction: column;
+    }
+
+    /* our sponsors container styles */
+    .our-sponsors-heading h2{
+        font-size: 35px;
+    }
+    .our-sponsors-info {
+        width: 90%;
+    }
+    .our-sponsors-logo-container {
+        width: 30%;
+        margin: auto;
+        grid-template-columns: 1fr;
+        margin-bottom: 100px;
+    }
+
+    .our-sponsors-logo-container img {
+        width: 100%;
     }
 }
 
@@ -413,6 +466,7 @@ body ul li a {
         padding-left: 3px;
         padding-right: 3px;
     }
+
 
     /* features you may enjoy section styles */
     .valuable-features-container {
@@ -437,6 +491,7 @@ body ul li a {
         padding-right: 33px;
     }
 
+
     /* banner section styles */
     .banner-section-article {
         width: 100%;
@@ -444,6 +499,7 @@ body ul li a {
     .banner-section-heading {
         font-size: XX-large;
     }
+
 
     /* features you may enjoy section styles */
     .valuable-features-container {
@@ -458,12 +514,19 @@ body ul li a {
         bottom: 0;
     }
 
+
     /* some facts section styles */
     .some-facts-heading {
         width: 100%;
     }
     .some-facts-about {
         flex-direction: column;
+    }
+
+
+    /* our sponsors logo container styles  */
+    .our-sponsors-logo-container img {
+        width: 100%;
     }
 }
 
@@ -474,10 +537,12 @@ body ul li a {
         padding-right: 55px;
     }
 
+
     /* banner section styles */
     .banner-section-article {
         width: 100%;
     }
+
 
     /* features you may enjoy section styles */
     .valuable-features-container {
@@ -492,6 +557,7 @@ body ul li a {
         bottom: 0;
     }
 
+
     /* some facts section styles */
     .some-facts-heading {
         width: 70%;
@@ -500,6 +566,12 @@ body ul li a {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+    }
+
+
+    /* our sponsors logo container styles  */
+    .our-sponsors-logo-container img {
+        width: 100%;
     }
 }
 
