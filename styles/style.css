@@ -192,6 +192,10 @@ body ul li a {
 
 /* responsive design for mobile devices */
 @media only screen and (max-width: 373px) {
+    /* banner section styles */
+    .header-container .banner-section-container {
+        width: 85%;
+    }
     /* quick list features styles */
     .quick-list-heading span:last-child {
         display: inline-block;
@@ -219,6 +223,7 @@ body ul li a {
     /* banner section styles */
     .header-container .banner-section-container {
         padding-top: 0;
+        width: 80%;
     }
     .banner-section-article {
         width: 100%;
