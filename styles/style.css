@@ -190,6 +190,70 @@ body ul li a {
 
 
 
+/* styles for features you may enjoy section */
+.valuable-features-container {
+    position: relative;
+    display: flex;
+    gap: 105px;
+    margin-bottom: 100px;
+}
+
+.valuable-features-list {
+    padding-top: 35px;
+}
+
+.valuable-features-heading {
+    padding-left: 15px;
+    border-left: 5px solid var(--primary-color);
+    margin-bottom: 24px;
+}
+
+.valuable-features-heading span {
+    display: block;
+}
+
+.valuable-features-info {
+    margin-bottom: 30px;
+}
+
+.about-this-feature {
+    padding: 30px 42px 30px 30px;
+    box-shadow: 0 0 10px rgb(235, 235, 235);
+    margin-bottom: 20px;
+}
+
+.feature-heading {
+    margin-bottom: 10px;
+    color: var(--primary-text-color);
+    font-size: 20px;
+}
+
+.feature-info {
+    line-height: 23px;
+}
+
+.valuable-features-btn {
+    position: absolute;
+    bottom: -60px;
+    right: 458px;
+    padding: 42px 45px;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    color: var(--body-bg);
+    background-color: #FF900E;
+}
+
+.valuable-features-btn span {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+}
+
 /* responsive design for mobile devices */
 @media only screen and (max-width: 373px) {
     /* banner section styles */
@@ -201,6 +265,23 @@ body ul li a {
         display: inline-block;
     }
 }
+
+@media only screen and (max-width: 535px) {
+    /* features you may enjoy section styles */
+    .valuable-features-heading {
+        font-size: 32px;
+    }
+    .valuable-features-heading span {
+        display: inline-block;
+    }
+    .about-this-feature {
+        padding: 20px;
+    }
+    .valuable-features-btn {
+        font-size: 25px;
+    }
+}
+
 @media only screen and (max-width: 576px) {
     /* navigation bar styles */
     .navbar {
@@ -245,6 +326,20 @@ body ul li a {
     .quick-list-info {
         width: 100%;
     }
+
+    /* features you may enjoy section styles */
+    .valuable-features-container {
+        flex-direction: column;
+    }
+    .valuable-features-img {
+        margin-top: -45px;
+    }
+    .valuable-features-btn {
+        position: relative;
+        left: 0;
+        bottom: 30px;
+    }
+
 }
 
 /* responsive design for tablet devices */
@@ -262,6 +357,19 @@ body ul li a {
     .banner-section-heading {
         font-size: XX-large;
     }
+
+    /* features you may enjoy section styles */
+    .valuable-features-container {
+        flex-direction: column;
+    }
+    .valuable-features-img {
+        margin-top: -30px;
+    }
+    .valuable-features-btn {
+        position: relative;
+        left: 0;
+        bottom: 0;
+    }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 744px) {
@@ -270,6 +378,19 @@ body ul li a {
     .navbar {
         padding-left: 3px;
         padding-right: 3px;
+    }
+
+    /* features you may enjoy section styles */
+    .valuable-features-container {
+        flex-direction: column;
+    }
+    .valuable-features-img {
+        margin-top: -30px;
+    }
+    .valuable-features-btn {
+        position: relative;
+        left: 0;
+        bottom: 0;
     }
 }
 
@@ -283,6 +404,19 @@ body ul li a {
     /* banner section styles */
     .banner-section-article {
         width: 100%;
+    }
+
+    /* features you may enjoy section styles */
+    .valuable-features-container {
+        flex-direction: column;
+    }
+    .valuable-features-img {
+        margin-top: -30px;
+    }
+    .valuable-features-btn {
+        position: relative;
+        left: 0;
+        bottom: 0;
     }
 }
 
