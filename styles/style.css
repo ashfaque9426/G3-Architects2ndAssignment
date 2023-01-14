@@ -30,6 +30,9 @@ body {
 }
 
 
+
+
+
 /* common styles among the elements needed to share */
 body img {
     max-width: 100%;
@@ -57,6 +60,10 @@ body ul li a {
 .quick-list-info, .valuable-features-info, .feature-info, .some-facts-info, .our-sponsors-info, .footer-info {
     color: var(--secondary-text-color);
 }
+
+
+
+
 
 
 /* styles for header section */
@@ -108,15 +115,17 @@ body ul li a {
     margin-bottom: 53px;
 }
 
-.banner-section-article .basic-btn {
+.basic-btn {
     padding: 15px 20px;
     background-color: var(--primary-color);
+    font-size: 20px;
     border: none;
     outline: none;
     border-radius: 8px;
+    cursor: pointer;
 }
 
-.banner-section-article .basic-btn a {
+.basic-btn a {
     text-decoration: none;
     color: #FFFFFF;
 }
@@ -127,7 +136,67 @@ body ul li a {
 
 
 
+
+
+/* Styles for main section */
+.main-container {
+    width: 75%;
+    margin: auto;
+}
+
+/* quick list features section */
+.quick-list-features-container {
+    padding-left: 50px;
+    margin: 85px 0 130px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 53px;
+}
+
+.quick-list-features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quick-list-heading {
+    margin-bottom: 20px;
+}
+
+.quick-list-heading span{
+    color: var(--secondary-text-color);
+    font-weight: 500;
+}
+
+.quick-list-heading span:last-child {
+    display: block;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.quick-list-info {
+    width: 77%;
+    line-height: 26px;
+    margin-bottom: 32px;
+}
+
+.quick-list-img {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+
+
 /* responsive design for mobile devices */
+@media only screen and (max-width: 373px) {
+    /* quick list features styles */
+    .quick-list-heading span:last-child {
+        display: inline-block;
+    }
+}
 @media only screen and (max-width: 576px) {
     /* navigation bar styles */
     .navbar {
@@ -159,6 +228,17 @@ body ul li a {
     }
     .banner-section-info {
         margin-bottom: 27px;
+    }
+
+    /* quick list features styles */
+    .quick-list-img {
+        grid-template-columns: 1fr;
+    }
+    .quick-list-heading {
+        font-size: 35px;
+    }
+    .quick-list-info {
+        width: 100%;
     }
 }
 
@@ -197,6 +277,17 @@ body ul li a {
 
     /* banner section styles */
     .banner-section-article {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1352px) {
+    /* quick list features styles */
+    .quick-list-features-container {
+        padding-left: 0;
+        flex-direction: column-reverse;
+    }
+    .quick-list-img img {
         width: 100%;
     }
 }
