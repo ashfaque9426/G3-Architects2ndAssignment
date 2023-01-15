@@ -277,6 +277,7 @@ body ul li a {
     display: flex;
     justify-content: space-around;
     gap: 20px;
+    transform-style: preserve-3d;
     margin-bottom: 150px;
 }
 
@@ -285,6 +286,12 @@ body ul li a {
     border-radius: 8px;
     text-align: center;
     padding: 90px 69px 87px;
+    cursor: pointer;
+}
+
+.some-facts-option:hover {
+    transform: perspective(150px) scaleZ(3) translateZ(10px);
+    box-shadow: 0 0 20px var(--primary-color);
 }
 
 .some-facts-option img {
@@ -330,6 +337,57 @@ body ul li a {
     filter: grayscale(100%);
 }
 
+
+/* my custom section styles */
+.adv-container {
+    background-image: linear-gradient(to right, rgba(245, 246, 252, 0.695), rgba(255, 149, 0, 0.604)), url(../images/employee-required.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    position: relative;
+    width: 65%;
+    height: 580px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.adv-container div.info-container {
+    width: 60%;
+    position: absolute;
+    top: calc(100% - 60%);
+    left: 5%;
+}
+
+.adv-info {
+    font-size: 28px;
+    font-weight: 700;
+    color: #393333;
+}
+
+.adv-container .basic-btn {
+    margin-top: 30px;
+    font-size: 28px;
+    color: var(--body-bg);
+    cursor: pointer;
+}
+
+
+/* footer section styles */
+.footer-container {
+    width: 75%;
+    margin: auto;
+    padding: 39px 30px;
+    background-color: var(--bg-color);
+}
+
+.footer-info {
+    font-size: 20px;
+    text-align: center;
+    color: var(--final-text-color);
+}
+
+
+
 /* responsive design for mobile devices */
 /* extra small devices */
 @media only screen and (max-width: 373px) {
@@ -338,7 +396,7 @@ body ul li a {
         width: 85%;
     }
 
-    
+
     /* quick list features styles */
     .quick-list-heading span:last-child {
         display: inline-block;
@@ -456,6 +514,27 @@ body ul li a {
     .our-sponsors-logo-container img {
         width: 100%;
     }
+
+    /* my custom added section styles */
+    .adv-container {
+        width: 100%;
+        background-position: left center;
+    }
+    .adv-container div.info-container {
+        width: 80%;
+    }
+    .adv-info {
+        font-size: 23px;
+    }
+
+    /* footer section styles */
+    .footer-container {
+        width: 100%;
+    }
+    .footer-info {
+        font-size: 16px;
+        line-height: 20px;
+    }
 }
 
 /* responsive design for tablet devices */
@@ -528,6 +607,26 @@ body ul li a {
     .our-sponsors-logo-container img {
         width: 100%;
     }
+
+    /* my custom added section styles */
+    .adv-container {
+        width: 100%;
+    }
+    .adv-container div.info-container {
+        width: 80%;
+    }
+    .adv-info {
+        font-size: 25px;
+    }
+
+    /* footer section styles */
+    .footer-container {
+        width: 100%;
+    }
+    .footer-info {
+        font-size: 16px;
+        line-height: 20px;
+    }
 }
 
 @media only screen and (min-width: 933px) and (max-width: 1555px) {
@@ -572,6 +671,17 @@ body ul li a {
     /* our sponsors logo container styles  */
     .our-sponsors-logo-container img {
         width: 100%;
+    }
+
+    /* my custom added section styles */
+    .adv-container {
+        width: 90%;
+    }
+    .adv-container div.info-container {
+        width: 80%;
+    }
+    .adv-info {
+        font-size: 27px;
     }
 }
 
